@@ -207,7 +207,7 @@ function move(from,to) {
         console.log(board);
 
         $.get({
-            url: HOST,
+            url: "https://checkers-game-api.herokuapp.com/",
             data:{board:getboard() },
             success: function(resp){
                 if(resp===0){
@@ -270,7 +270,7 @@ function move_comp(from,to,del=[]) {
         remove(del[d].x,del[d].y)
     }
     $.get({
-        url: HOST+'legal',
+        url: "https://checkers-game-api.herokuapp.com/legal",
         data:{board:getboard() },
         success: function(resp){
             if(resp===0){
