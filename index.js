@@ -217,7 +217,7 @@ function move(from,to) {
                 }
                 if(resp===1){
                     alert("Вы победили! Добро пожаловать в клуб.");
-                    document.location.href="http://www.humansnotinvited.com/";
+                    document.location.href="https://www.humansnotinvited.com/";
                     return;
                 }
                 if(resp===-1){
@@ -280,7 +280,7 @@ function move_comp(from,to,del=[]) {
             }
             if(resp===1){
                 alert("Вы победили! Добро пожаловать в клуб.");
-                document.location.href="http://www.humansnotinvited.com/";
+                document.location.href="https://www.humansnotinvited.com/";
                 return;
             }
             if(resp===-1){
