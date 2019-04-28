@@ -270,7 +270,7 @@ function move_comp(from,to,del=[]) {
         remove(del[d].x,del[d].y)
     }
     $.get({
-        url: "https://checkers-game-api.herokuapp.com/legal",
+        url: "https://checkers-game-api.herokuapp.com/legal/",
         data:{board:getboard() },
         success: function(resp){
             if(resp===0){
